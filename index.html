@@ -3,19 +3,30 @@
   <head>
     <style>
       .headerContainer {
-        padding: 0 32px;
+        padding: 0 24px;
       }
       
       .header {
         padding: 24px;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
         justify-items: center;
         background-color: #66ffff;
       }
+
+      .title {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .subTitle {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
       
       .main {
-        padding: 0 32px 16px;
+        padding: 0 24px 8px;
         display: grid;
         grid-template-columns: 2fr 1fr;
       }
@@ -29,8 +40,8 @@
   <body>
   <div class="headerContainer">
     <div class="header">
-      <h1>БВИ</h1>
-      <h2>мобильное приложение</h2>
+      <span class="title">БВИ</span>
+      <span class="subTitle">мобильное приложение</span>
     </div>
   </div>
    <div class="main">
